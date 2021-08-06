@@ -1,0 +1,84 @@
+.heading{
+    background-color: rgb(95, 218, 152);
+    height:40px;
+    font-size:250%;
+
+    color:white;
+}
+
+.Part2{
+    padding-top:100px;
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+}
+.btn1{
+    display: inline-block;
+     height:90px;
+     width:400px;
+     margin-left:50%;
+     margin-right:50%;
+}
+
+.form-control{
+     height:90px;
+     width:400px;
+    
+    
+    /* margin-left:60%;
+    margin-right:60%; */ 
+    background-color:rgb(236, 239, 240);
+    border-radius: 10px;
+}
+
+div.chat{
+    background-color: rgb(228, 241, 245);
+    margin:10px;
+    padding:5px;
+
+}
+#Button{
+  position:fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: rgb(250, 139, 96);
+  border-color: rgb(250, 139, 96);
+}
+
+/* Login */ 
+#frm{  
+    border: solid  rgb(63, 40, 96) 4px;  
+    width:320px;  
+    border-radius: 10px;  
+    margin: 50px auto;    
+    padding: 20px;
+    background-color: rgb(228, 241, 245);  
+}  
+#btn1{  
+    background-color:rgb(250, 139, 96); 
+    border: solid  rgb(250,139,96) 2px;
+    padding: 7px;  
+    width: 150px;
+    align-items: center;
+    font-style: italic;
+    border-radius: 10px;
+} 
+img{
+  margin-left: 30%;
+}
+/* Login */
+
+.b .usern {
+    display: table-cell;
+    width: 100%;
+}
+
+.b .time {
+    display: table-cell;
+    white-space: nowrap;
+}
+#b12{
+    top:0px;
+    margin-top:0px;
+    float:right;
+}
