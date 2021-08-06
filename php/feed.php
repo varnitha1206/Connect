@@ -14,7 +14,7 @@
   <div calss="b"> 
   <button type="button" class="btn btn-primary btn-lg" id="Button" onclick="window.location.href='newpost.php'" >Create a new post</button>      
         <?php
-        session_start();
+        
         include('connection.php'); 
         $sql="SELECT * from posts";
         $result = mysqli_query($con, $sql);
@@ -27,10 +27,17 @@ if ($result = $con->query($sql))
         if ($result1 = $con->query($sql4)){
             $row1 = $result1->fetch_assoc();
         ?>
+        
         <div class="chat" style="background-color: rgb(228, 241, 245);margin:10px auto;padding:10px; border-radius:10px; text-align: center;width:500px; ">
+        <?php
+        session_start();
+    if($_SESSION['user_id']==$aa){ 
+    ?> 
+    <button type="button" class="btn-close" style="margin-right:10px;" aria-label="Close"></button>
+    }
         <div class="usern" style="text-align:left;font-size: 130%; color:rgb(63, 40, 96)">
             <?php echo $row1["name"]?>
-    </div>  
+    </div> 
     <br> 
     <div class="p" style="text-align: justify;font-size:110%;">
         <?php echo $row["post_status"]; ?>
@@ -41,6 +48,7 @@ if ($result = $con->query($sql))
         </div>
         <?php
     }
+}
 }
     $result->free();
 } 

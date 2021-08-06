@@ -15,7 +15,7 @@
 <body>
  
             <nav class="navbar navbar-expand-lg" style="background-color:rgb(95, 218, 152);">
-                <a class="navbar-brand" href="#" style="color: white;">
+                <a class="navbar-brand" href="feed.php" style="color: white;">
                     <strong><h2>Connect</h2></strong> 
                   </a>
             
@@ -23,13 +23,13 @@
                    <?php
                    session_start();
                    if (isset($_SESSION['email'])) {
-                    echo '<a href="profile.php" class="btn btn-warning" id="b12" style="background-color: rgb(250, 139, 96); border:solid rgb(250, 139, 96) 2px;margin-left:4px; color:white;">Hi, '.$_SESSION['uname'].'</a> 
+                    echo '<a href="feed.php" class="btn btn-warning" id="b12" style="background-color: rgb(250, 139, 96); border:solid rgb(250, 139, 96) 2px;margin-left:4px; color:white;">Hi, '.$_SESSION['uname'].'</a> 
                      <a href="logout.php" class="btn btn-danger" id="b13" style="background-color: rgb(250, 139, 96);border:solid rgb(250, 139, 96) 2px;">Logout</a>';
                     } else {
                     echo '<a href="login.php" class="btn btn-success id="b14"" data-target="modal1" style="background-color: rgb(250, 139, 96); border:solid rgb(250, 139, 96) 2px;">Login</a>&nbsp
                     <a href="register.php" class="btn btn-success" id="b15" data-target="modal2" style="background-color: rgb(250, 139, 96); border:solid rgb(250, 139, 96) 2px;">Register</a>';
                     }
-                    session_destroy();?>
+                    ?>
                     
                 </div>   
 
