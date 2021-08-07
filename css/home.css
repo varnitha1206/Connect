@@ -20,13 +20,7 @@
      margin-right:50%;
 }
 
-.form-control{
-     height:90px;
-     width:400px;
-    
-    
-    /* margin-left:60%;
-    margin-right:60%; */ 
+.form-control{ 
     background-color:rgb(236, 239, 240);
     border-radius: 10px;
 }

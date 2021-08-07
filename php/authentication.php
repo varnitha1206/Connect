@@ -18,7 +18,9 @@ if ($result = $con->query($sql3)){
     header("location:feed.php");
 }
 else{
+    
     header("location:login.php");
+    
 }
 ?>     
 

@@ -46,7 +46,7 @@
                 </div>
           </div>
           <div class="col-md-6 col-sm-12"><center>
-          <img class="card-img-top" style="right:-120px;width:380px; height:400px;"
+          <img class="card-img-top" style="margin-top:10%;right:-120px;width:380px; height:400px;"
               src="img.jpg"
               alt="img not available"> </center>        
           </div>
