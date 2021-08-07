@@ -60,5 +60,5 @@ if ($result = $con->query($sql))
 
 
 </div>
-<!-- <div class="alert alert-success"><p>YAY!!</p><?div> -->
+<!-- <div class="alert alert-success"><p>YAY!!</p><div> -->
 </body>
