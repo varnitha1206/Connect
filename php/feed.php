@@ -30,10 +30,12 @@ if ($result = $con->query($sql))
         <div class="chat" style="background-color: rgb(228, 241, 245);margin:10px auto;padding:10px; border-radius:10px; text-align: center;width:500px; ">
         <?php
         ;
-    // if($_SESSION['user_id']==$aa){ 
-    // ?> 
-    <!-- // <button type="button" class="btn-close" style="margin-right:10px;" aria-label="Close"></button>
-    // } -->
+     if($_SESSION['user_id']==$aa){ 
+        ?> 
+    <button type="button" class="close" href= aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button><?php
+     } ?> 
         <div class="usern" style="text-align:left;font-size: 130%; color:rgb(63, 40, 96)">
             <?php echo $row1["name"]?>
     </div> 
@@ -47,10 +49,10 @@ if ($result = $con->query($sql))
         </div>
         <?php
     }
-}
+
 }
     $result->free();
-// } 
+} 
 ?>
 
 
