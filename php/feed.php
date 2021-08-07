@@ -32,7 +32,7 @@ if ($result = $con->query($sql))
         ;
      if($_SESSION['user_id']==$aa){ 
         ?> 
-    <button type="button" class="close" href= aria-label="Close">
+    <button type="button" class="close" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button><?php
      } ?> 
