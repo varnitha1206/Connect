@@ -18,7 +18,7 @@
   <header>
   
   <nav class="navbar navbar-expand-lg" style="background-color:rgb(95, 218, 152);">
-                <a class="navbar-brand" href="feed.php" style="color: white;">
+                <a class="navbar-brand" href="index.php" style="color: white;">
                     <strong><h2>Connect</h2></strong> 
                   </a>
             

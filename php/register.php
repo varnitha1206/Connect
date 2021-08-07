@@ -60,9 +60,9 @@
                                     <option value ="Male">Male</option>
                                     <option value="Others">Others</option> 
                                 </select><br><br>
-        Password: <input type="text" name="pd"><br>
+        Password: <input type="password" name="pd"><br>
         <br>
-        Retype Password: <input type="text" name="pdc"><br><br>
+        Retype Password: <input type="password" name="pdc"><br><br>
         <center><input type="submit" id="btn1" value="create"></center>
         </form>    
     </div>

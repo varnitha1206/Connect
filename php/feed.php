@@ -22,6 +22,7 @@ if ($result = $con->query($sql))
 {
     while ($row = $result->fetch_assoc()) {
         $aa=$row["user_id"];
+        $pp=$row["post_id"];
         $sql4="SELECT * from users where user_id ='$aa'";
         if ($result1 = $con->query($sql4)){
             $row1 = $result1->fetch_assoc();
@@ -32,9 +33,10 @@ if ($result = $con->query($sql))
         ;
      if($_SESSION['user_id']==$aa){ 
         ?> 
-    <button type="button" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button><?php
+    <?php echo' <button type="button"  class="close" aria-label="Close"><a href="delpost.php?rn='.$pp.'">'; ?> 
+  <span aria-hidden="true">&times;</span></a>
+</button>
+<?php
      } ?> 
         <div class="usern" style="text-align:left;font-size: 130%; color:rgb(63, 40, 96)">
             <?php echo $row1["name"]?>
@@ -58,4 +60,5 @@ if ($result = $con->query($sql))
 
 
 </div>
+<!-- <div class="alert alert-success"><p>YAY!!</p><?div> -->
 </body>

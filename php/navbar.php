@@ -19,7 +19,7 @@
                     <strong><h2>Connect</h2></strong> 
                   </a>
             
-              <div style="z-index: 100;position:relative;left:890px;">
+              <div style="position:absolute;right:30px;">
                    <?php
                    session_start();
                    if (isset($_SESSION['email'])) {
