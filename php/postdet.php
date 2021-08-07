@@ -10,6 +10,5 @@ session_start();
     $ui=$_SESSION['user_id'];
         $sql = "INSERT into posts values(null,'$ui','$post_status','$post_date','$post_time')";  
         $result = mysqli_query($con, $sql);  
-         header("location:feed.php");
-            
+         header("location:feed.php");       
 ?>
