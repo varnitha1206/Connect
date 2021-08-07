@@ -16,13 +16,12 @@
 <body class="homebody" style="background-color:white">
   <!-- Header -->
   <header>
-  
   <nav class="navbar navbar-expand-lg" style="background-color:rgb(95, 218, 152);">
                 <a class="navbar-brand" href="index.php" style="color: white;">
                     <strong><h2>Connect</h2></strong> 
                   </a>
             
-              <div style="z-index: 100;position:relative;left:890px;">
+              <div style="position:absolute;right:30px;">
                    <?php
                    session_start();
                    if (isset($_SESSION['email'])) {
@@ -38,18 +37,18 @@
                   </header> 
 <div class="c">
         <div class="row">
-          <div class="col-md-6 col-sm-12" style="background-color: rgb(63, 40, 96); height:520px ;left:0px;">
+          <div class="col-md-6 col-sm-12" style="background-color: rgb(63, 40, 96); height:590px;">
                   <div class="left" style="background-color: rgb(63, 40, 96); color:white; margin: 100px 50px;">
-                  <h1 style="text-align:center">Connect with friends and the world around you!</h1><br><br>
+                  <h1 style="text-align:center; padding-top:55px;">Connect with friends and the world around you!</h1><br><br>
                   <h5 style="text-align:center">Check out what's new on your timeline.</h5><br><center>
                   <button type="button" class="btn btn-primary btn-lg" id="Button123"style="background-color: rgb(250, 139, 96);border-color: rgb(250, 139, 96);" onclick="window.location.href='php/register.php'" >Explore now</button>
 </center>  
                 </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-          <img class="card-img-top" style="right:-100px;width:380px; height:400px;"
+          <div class="col-md-6 col-sm-12"><center>
+          <img class="card-img-top" style="right:-120px;width:380px; height:400px;"
               src="img.jpg"
-              alt="img not available">         
+              alt="img not available"> </center>        
           </div>
         </div>
   </div>
